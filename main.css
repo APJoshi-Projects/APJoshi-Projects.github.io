@@ -1,0 +1,25 @@
+* {
+    background-color: #003300;
+    margin: 0px;
+    color: azure;
+    font-family: 'Consolas';
+  }      
+  h1 {
+    text-align: center;
+    color: wheat;
+  }
+  h2 {
+    text-align: center;
+    color: wheat;
+  }
+  .blog {
+    display: grid;
+    margin: 5px 300px 5px 300px;
+  }
+  .header, h3 {
+    background-color: #033;
+  }
+  .footer, .graph1, .graph2, .graph3 {
+      display: inline-block;
+      background-color: #330;
+  }
