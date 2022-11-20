@@ -1,134 +1,181 @@
-
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Timeline Journal</title>
-    <meta charset="UTF-8" lang="en" />
-   <link rel="stylesheet" type="text/css" href="main.css">
-   <!--file:///D:/Projects/VerticalTimelineBlog/-->
-  </head>
-  <body>
-    <header>
-      <h1>Timeline Journal Template</h1>
-      <h2 class="graph" id="one">
-        <div class="graph1" id="one">
-          health graph |
-        </div>
-        <div class="graph2" id="one">
-          wealth graph |
-        </div>
-        <div class="graph3" id="one">
-          growth graph 
-        </h2>
-      </div>
-    </header>
-    <hr></hr>
-    <div class="blog" id="one">
-      <div class="header" id="one">
-        <h3>SAT 16-AUG-2020</h3>
-      </div>
-      <div class="blog-body" id="one">
-        <div class="time text img video graph" id="one">
-          <p class="event" id="one">
-            00:00 - 06:00 | Sleep | Body Sleep - Mind Awake | 
-          </p>
-          <p class="event" id="two">
-            06:00 - 06:45 | Workout Time | Running | Exercise | Get Ready
-          </p>
-          <p class="event" id="three">
-            06:45 - 07:00 | Prayer Time |
-          </p>
-          <p class="event" id="four">
-            07:00 - 08:00 | Commute To Work |
-          </p>
-          <p class="event" id="five">
-            08:00 - 17:00 | Work Time | Professional Work | Job | Money Making Work |
-          </p>
-          <p class="event" id="six">
-            17:00 - 18:30 | Play Time | Time with Friends | Enjoy |
-          </p>
-          <p class="event" id="seven">
-            18:30 - 20:45 | Study Time | Reading Time | Learn Programming
-          </p>
-          <p class="event" id="eight">
-            20:45 - 21:00 | Workout Time | Exercise |
-          </p>
-          <p class="event" id="nine">
-            21:15 - 21:45 | Dinner | Watch TV | News
-          </p>
-          <p class="event" id="ten">
-            22:00 - 23:00 | Programming | Create | Innovate | Make | Develop
-          </p>
-          <p class="event" id="eleven">
-            23:00 - 24:00 | Family Time | Think For Tomorrow | Think For Future | To Bed |
-          </p>
-        </div>
-      </div>
-      <div class="footer" id="one">Conclusion: 
-        <div class="graph1" id="one">
-          health graph |
-        </div>
-        <div class="graph2" id="one">
-          wealth graph |
-        </div>
-        <div class="graph3" id="one">
-          growth graph 
-        </div>
-      </div>
-    </div>
+<html lang="en">
 
-    <div class="blog" id="two">
-      <div class="header" id="two">
-        <h3>SUN 16-AUG-2020</h3>
-      </div>
-      <div class="blog-body" id="two">
-        <div class="time text img video graph" id="two">
-          <p class="event" id="one">
-            00:00 - 06:00 | Sleep | Body Sleep - Mind Awake | 
-          </p>
-          <p class="event" id="two">
-            06:00 - 06:45 | Workout Time | Running | Exercise | Get Ready
-          </p>
-          <p class="event" id="three">
-            06:45 - 07:00 | Prayer Time |
-          </p>
-          <p class="event" id="four">
-            07:00 - 08:00 | Commute To Work |
-          </p>
-          <p class="event" id="five">
-            08:00 - 17:00 | Work Time | Professional Work | Job | Money Making Work |
-          </p>
-          <p class="event" id="six">
-            17:00 - 18:30 | Play Time | Time with Friends | Enjoy |
-          </p>
-          <p class="event" id="seven">
-            18:30 - 20:45 | Study Time | Reading Time | Learn Programming
-          </p>
-          <p class="event" id="eight">
-            20:45 - 21:00 | Workout Time | Exercise |
-          </p>
-          <p class="event" id="nine">
-            21:15 - 21:45 | Dinner | Watch TV | News
-          </p>
-          <p class="event" id="ten">
-            22:00 - 23:00 | Programming | Create | Innovate | Make | Develop
-          </p>
-          <p class="event" id="eleven">
-            23:00 - 24:00 | Family Time | Think For Tomorrow | Think For Future | To Bed |
-          </p>
-        </div>
-      </div>
-      <div class="footer" id="two">Conclusion: 
-        <div class="graph1" id="two">
-          health graph |
-        </div>
-        <div class="graph2" id="two">
-          wealth graph |
-        </div>
-        <div class="graph3" id="two">
-          growth graph 
-        </div>
-      </div>
-    </div>
-  </body>
+<head>
+    <title>Ankur Joshi's Website</title>
+    <meta charset="UTF-8" lang="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="stylesheet" type="text/css" href="main.css"> -->
+    <script language="javascript" src="gitrows.min.js"></script>
+    <script language="javascript" src="main.js"></script>
+
+<!--<style>
+table {
+  border-collapse: collapse;
+}
+
+table, td, th {
+  border: 1px solid white;
+}
+</style>-->
+    <center>
+        <table border="1" height="370" style="width:100%">
+            <tr>
+                <td align="center" style="width:33.33%">
+                    <table border="0.5" height="100%" style="width:100%">
+                        <tr>
+                            <td align="center">
+                                <a href="http://time.is/Mumbai">
+                                    <?php echo date('(l) jS F, Y.');?>
+                                </a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td align="center">
+                                <br>    
+                                <br>
+                                <br>
+                                <br>
+                                <u>Login</u>
+                                <br>
+                                <form name="Login" action="authenticate.js" method="post">
+                                    
+                                    <label for="UserName"><b>Username</b></label><br>
+                                    <input type="text" placeholder="Enter Username" name="UserName" required><br>
+                                    
+                                    <label for="Password"><b>Password</b>
+                                    </label><br><input type="text" placeholder="Enter Password" name="Password" required><br><br>
+                                    
+                                    <input value="Submit" type="Submit" height="5" width="9">
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+                <td align="center" style="width:33.33%">
+                    <h1>Welcome!</h1>
+                    <h2><a href="http://ankur-joshi.appspot.com">apjoshi.appspot.com</a></h2>
+                    <img src="Ankur.PNG" border="1" width="187" height="299" alt="Ankur's img" />
+                </td>
+
+                <td align="center" style="width:33.33%"><a href="php_test.php">php test page</a>About Us and Navigation
+                    Bar
+                    <table border="1" style="width:100%;">
+                        <tr border="1" align="center" style="height:33.33%">
+                            <td border="1" align="center" style="width:33.33%"><a href="/cgi-bin/hello">hello.c</a></td>
+                            <td border="1" align="center" style="width:33.33%"><a href="/cgi-bin/hello.py">hello.py</a>
+                            </td>
+                            <td border="1" align="center" style="width:33.33%"><a href="/cgi-bin/hello.pl">hello.pl</a>
+                            </td>
+                        </tr>
+                        <tr border="1" align="center" style="height:33.33%">
+                            <td border="1" align="center" style="width:33.33%"><a href="/cgi-bin/hello.rb">hello.rb</a>
+                            </td>
+                            <td border="1" align="center" style="width:33.33%"><a
+                                    href="/cgi-bin/hello.erb">hello.erb</a>
+                            </td>
+                            <td border="1" align="center" style="width:33.33%"><a href="/cgi-bin/hello.erb">hello.cgi
+                            </td>
+                        </tr>
+                        <tr border="1" align="center" style="height:33.33%">
+                            <td border="1" align="center" style="width:33.33%">sdfsdf</td>
+                            <td border="1" align="center" style="width:33.33%">sdfsdf</td>
+                            <td border="1" align="center" style="width:33.33%">sdfsdf</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </center>
+    <hr>
+</head>
+
+<body bgcolor="#003300" text="white" link="white" vlink="lightgreen">
+
+    <table border="1" style="width:100%; height:100%">
+        <tr>
+            <td>
+                <center>
+                    <a href="https://www.google.co.in/"><img src="google tile.png" border="1" width="248 " height="120"
+                            alt="google tile" hspace="30" vspace="30" /></a>
+
+                    <a href="/database/manager/phpliteadmin.php"><img src="database-manager.png" border="1" width="248"
+                            height="120" alt="database-manager" hspace="30" vspace="30" /></a>
+
+                    <a href="/files/manager/index.php"><img src="file-manager.png" border="1" width="248" height="120"
+                            alt="file-manager" hspace="30" vspace="30" /></a>
+
+                    <a href="/face-recognition-door-lock/web-face-detect/index-door-lock.html"><img
+                            src="face-recognition-door-lock.png" border="1" width="248" height="120"
+                            alt="face-recognition-door-lock" hspace="30" vspace="30" /></a>
+
+                    <a href="/corporate-dashboard/index1.php"><img src="corporate-dashboard.png" border="1" width="248"
+                            height="120" alt="corporate-dashboard" hspace="30" vspace="30" /></a>
+
+                    <a href="/Web/index.php"><img src="smart-switch-ui.png" border="1" width="248" height="120"
+                            alt="smart-switch-ui" hspace="30" vspace="30" /></a>
+
+                    <a href="/image-gallery/index.php"><img src="image-gallery.png" border="1" width="248" height="120"
+                            alt="image-gallery" hspace="30" vspace="30" /></a>
+
+                    <img src="google tile.png" border="1" width="248" height="120" alt="google tile" hspace="30"
+                        vspace="30" />
+
+                    <img src="google tile.png" border="1" width="248" height="120" alt="google tile" hspace="30"
+                        vspace="30" />
+
+                    <img src="google tile.png" border="1" width="248" height="120" alt="google tile" hspace="30"
+                        vspace="30" />
+
+                    <img src="google tile.png" border="1" width="248" height="120" alt="google tile" hspace="30"
+                        vspace="30" />
+
+                    <img src="google tile.png" border="1" width="248" height="120" alt="google tile" hspace="30"
+                        vspace="30" />
+
+                    <img src="google tile.png" border="1" width="248" height="120" alt="google tile" hspace="30"
+                        vspace="30" />
+
+                    <img src="google tile.png" border="1" width="248" height="120" alt="google tile" hspace="30"
+                        vspace="30" />
+
+                    <img src="google tile.png" border="1" width="248" height="120" alt="google tile" hspace="30"
+                        vspace="30" />
+
+                    <img src="google tile.png" border="1" width="248" height="120" alt="google tile" hspace="30"
+                        vspace="30" />
+
+                    <img src="google tile.png" border="1" width="248" height="120" alt="google tile" hspace="30"
+                        vspace="30" />
+
+                    <img src="google tile.png" border="1" width="248" height="120" alt="google tile" hspace="30"
+                        vspace="30" />
+
+                    <img src="google tile.png" border="1" width="248" height="120" alt="google tile" hspace="30"
+                        vspace="30" />
+
+                    <img src="google tile.png" border="1" width="248" height="120" alt="google tile" hspace="30"
+                        vspace="30" />
+
+                    <img src="google tile.png" border="1" width="248" height="120" alt="google tile" hspace="30"
+                        vspace="30" />
+
+                    <img src="google tile.png" border="1" width="248" height="120" alt="google tile" hspace="30"
+                        vspace="30" />
+
+                    <img src="google tile.png" border="1" width="248" height="120" alt="google tile" hspace="30"
+                        vspace="30" />
+
+                    <img src="google tile.png" border="1" width="248" height="120" alt="google tile" hspace="30"
+                        vspace="30" />
+
+                </center>
+            </td>
+        </tr>
+    </table>
+</body>
+
 </html>
