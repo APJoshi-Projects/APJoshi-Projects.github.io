@@ -1,0 +1,95 @@
+<!--form_blog.html
+https://medium.com/geekculture/link-your-html-form-to-a-spreadsheet-via-google-forms-9024f0611d82-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GASFormTest</title>
+</head>
+
+
+<!-- stylesheet: https://codepen.io/colorlib/pen/KVoZyv -->
+
+
+<body>
+  <div class="container">
+    <form id="contact" onsubmit="return postToGoogle();">
+      <h3>Contact Form</h3>
+      <h4>Connect with us</h4>
+      <fieldset>
+        <input  placeholder="Full Name"
+                type="text" 
+                name="entry.1885792234"
+                data-name="fullname" 
+                id="fullname" 
+                required>
+      </fieldset>
+      <fieldset>
+        <input 
+                placeholder="Username" 
+                type="text" 
+                name="entry.1428236563"
+                data-name="username" 
+                id="username" 
+                required>
+      </fieldset>
+      <fieldset>
+        <input 
+                placeholder="Password"
+                type="password" 
+                name="entry.828524932" 
+                data-name="password" 
+                id="password" 
+                required>
+      </fieldset>
+      <fieldset>
+        <input 
+                placeholder="Email" 
+                type="email"
+                data-name="email" 
+                id="email" 
+                name="entry.1605899120"
+                required>
+      </fieldset>
+      <fieldset>
+        <button type="submit" id="contact-submit">Submit</button>
+      </fieldset>
+    </form>
+  </div>
+
+  <script>
+    function postToGoogle() {
+      var field1 = $("#fullname").val();
+      var field2 = $("#username").val();
+      var field3 = $("#password").val();
+      var field4 = $("#email").val();
+
+      $.ajax({
+        url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSd1NIyGnpveP5-Ni7jaoiULCFzbasPIWunHebxZDUVX9o4ERg/formResponse",
+        data: {
+          "entry.1885792234": field1,
+          "entry.1428236563": field2,
+          "entry.828524932": field3,
+          "entry.1605899120": field4
+        },
+        type: "POST",
+        dataType: "xml",
+        success: function (d) {
+          $('#contact').trigger('reset');
+        },
+        error: function (x, y, z) {
+          $('#contact').trigger('reset');
+        }
+      });
+      return false;
+    }
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</body>
+
+</html>
